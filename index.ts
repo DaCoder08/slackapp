@@ -16,7 +16,7 @@ var schema = makeExecutableSchema({
     resolvers
 })
 
-mongoose.connect("mongodb://localhost/slack-graphql", {useNewUrlParser:true})
+mongoose.connect("mongodb+srv://Bob:bob123@cluster0-fguxs.mongodb.net/slack", {useNewUrlParser:true})
 
 var app = express()
 
