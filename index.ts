@@ -60,7 +60,7 @@ const httpServer = createServer(app)
 
 server.installSubscriptionHandlers(httpServer)
 
-httpServer.listen(80, () => {
+httpServer.listen(process.env.PORT || 3000, () => {
     console.log("Server started at http://localhost:80/graphql")
 })
 
